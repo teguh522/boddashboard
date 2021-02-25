@@ -64,6 +64,7 @@ class Admin extends CI_Controller
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
         curl_setopt($ch, CURLOPT_HTTPHEADER, array(
             'Content-Type: application/json',
+            'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlciI6InRlZ3VoIiwiY3JlYXRlZEF0IjoiMjAyMS0wMi0yNVQwMjo1MTozMC40NjhaIiwidXBkYXRlZEF0IjoiMjAyMS0wMi0yNVQwMjo1MTozMC40NjhaIiwiaWF0IjoxNjE0MjIxNTgzfQ.YeT3yjFRsFvoNZLbkFLxwTOj3aT0QLswYUJsvu6K8zA'
         ));
         $output = curl_exec($ch);
         curl_close($ch);
